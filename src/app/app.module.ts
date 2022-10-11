@@ -9,6 +9,7 @@ import {MatCardModule} from '@angular/material/card';
 import { CardsComponent } from './cards/cards.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormInComponent } from './form-in/form-in.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,9 +23,10 @@ import { FormInComponent } from './form-in/form-in.component';
     AppRoutingModule,
     DragDropModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
